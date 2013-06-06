@@ -180,3 +180,7 @@ bar {
         status_command i3status -c /home/malguzt/.i3/.i3status.conf
 }
 
+# Start indicators
+
+exec indicator-multiload
+exec indicator-cpufreq
