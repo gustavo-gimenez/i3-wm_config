@@ -12,6 +12,8 @@
 
 # Setting background image.
 exec --no-startup-id feh --bg-scale /home/malguzt/Imagenes/Fondos/bau_mecanico.png
+# Setting key map
+exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle' 'es, us'
 
 # Disable nautilus desktop window.
 # --------------------------------
