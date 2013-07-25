@@ -22,6 +22,13 @@ exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle' 'es, us'
 
 # gsettings set org.gnome.desktop.background show-desktop-icons false
 
+# Setting Moc shortcuts
+bindsym $mod+x exec mocp -G  #Toggle between play and pause.
+bindsym $mod+c exec mocp -f  #Request playing the next song from the server's playlist.
+bindsym $mod+z exec mocp -r  #Request playing the previous song from the server's playlist.
+bindsym $mod+Shift+Z exec mocp -v -10 #Volume down
+bindsym $mod+Shift+X exec mocp -v +10 #Volume up
+
 # Setting keys to lock screen.
 bindsym $mod+Shift+s exec /home/malguzt/.i3/suspend.sh
 bindsym $mod+Shift+b exec i3lock -i /home/malguzt/Imagenes/sauron.png -t -n -d
