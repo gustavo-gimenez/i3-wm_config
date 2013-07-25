@@ -29,6 +29,10 @@ bindsym $mod+z exec mocp -r  #Request playing the previous song from the server'
 bindsym $mod+Shift+Z exec mocp -v -10 #Volume down
 bindsym $mod+Shift+X exec mocp -v +10 #Volume up
 
+# Setting function keys
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 1%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 1%- unmute
+
 # Setting keys to lock screen.
 bindsym $mod+Shift+s exec /home/malguzt/.i3/suspend.sh
 bindsym $mod+Shift+b exec i3lock -i /home/malguzt/Imagenes/sauron.png -t -n -d
