@@ -28,6 +28,7 @@ bindsym $mod+c exec mocp -f  #Request playing the next song from the server's pl
 bindsym $mod+z exec mocp -r  #Request playing the previous song from the server's playlist.
 bindsym $mod+Shift+Z exec mocp -v -10 #Volume down
 bindsym $mod+Shift+X exec mocp -v +10 #Volume up
+bindsym $mod+Shift+m exec mocp mocp -i | grep File | sed 's/File: //g' | sed 's/ /\\ /g' | xargs trash-put #Move bad music to the trash
 
 # Setting function keys
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 1%+ unmute
