@@ -30,6 +30,7 @@ bindsym $mod+Shift+Z exec mocp -v -10 #Volume down
 bindsym $mod+Shift+X exec mocp -v +10 #Volume up
 #This feature need trash-cli to work. If you want, you can use 'rm' in place of 'trash-put'
 bindsym $mod+Shift+m exec mocp mocp -i | grep File | sed 's/File: //g' | sed 's/ /\\ /g' | xargs trash-put #Move bad music to the trash
+bindsym $mod+Shift+g exec mocp mocp -i | grep File | sed 's/File: //g' | sed 's/ /\\ /g' | xargs -I{} cp "{}" /home/malguzt/archivos/MusicaParaElAuto
 
 # Setting function keys
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 1%+ unmute
